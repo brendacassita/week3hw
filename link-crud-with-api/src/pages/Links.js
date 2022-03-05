@@ -19,7 +19,7 @@ const Links = ()=>{
         <button onClick={getLinks}>Get Links</button>
         <button onClick={()=>createLink( {title:'title here', username:'brendac'} )}>create link</button>
         <button onClick={()=>updateLink( {id:16, title:'UPDATED'} )}>update link</button>
-        <button onClick={()=>deleteLink(53)}>delete link</button>
+        <button onClick={()=>deleteLink(111)}>delete link</button>
         </div>
     )
 }

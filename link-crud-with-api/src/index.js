@@ -8,7 +8,8 @@ import About from "./pages/About";
 import DataProvider from "./providers/DataProvider";
 import Links from "./pages/Links";
 // import LinkShow from "./pages/LinkShow";
-import LinkForm from "./pages/LinkForm";
+import NewLink from "./pages/NewLink";
+import Home from "./pages/Home";
 
 
 const NotFound = ()=>{
@@ -24,8 +25,9 @@ ReactDOM.render(
           <Route index element={<Links />} />
           <Route path='/about' element={<About />} />
           {/* <Route path='/links/:id' element={<LinkShow />} /> */}
-          <Route path='/links/new' element={<LinkForm />} />
-          <Route path='/links/:id/edit' element={<LinkForm />} />
+          <Route path='/links/new' element={<NewLink />} />
+          <Route path='/links/:id/edit' element={<NewLink />} />
+          <Route path='/links/home' element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

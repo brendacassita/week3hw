@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { DataContext } from '../providers/DataProvider'
+import { Link } from 'react-router-dom'
 
 const Links = ()=>{
     //useContext always return object just destructor keys
